@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js"></script>
+  <script src="script.js"></script>
+
+</head>
+<body>
+  <!-- Página do conversor -->
+  <div data-role="page" id="conversor">
+    
+    <div data-role="header" class="custom-header">
+      <h1>Conversor</h1>
+    </div>
+
+    <div data-role="content">
+
+        <label for="moeda">Converter de:</label>
+        <select name="moeda" id="moedaOri" data-theme="b" data-icon="arrow-d" data-iconpos="right">
+          <option value="USD">🇺🇸 Dólar (USD)</option>
+          <option value="EUR">🇪🇺 Euro (EUR)</option>
+          <option value="BRL">🇧🇷 Real (BRL)</option>
+          <option value="JPY">🇯🇵 Iene (JPY)</option>
+          <option value="GBP">🇬🇧 Libra (GBP)</option>
+          <option value="CAD">🇨🇦 Dólar Canadense (CAD)</option>
+          <option value="AUD">🇦🇺 Dólar Australiano (AUD)</option>
+          <option value="CHF">🇨🇭 Franco Suíço (CHF)</option>
+          <option value="CNY">🇨🇳 Yuan Chinês (CNY)</option>
+          <option value="VES">🇻🇪 Bolívar Venezuelano (VES)</option>
+          <option value="AOA">🇦🇴 Kwanza Angolano (AOA)</option>
+        </select>
+
+        <label for="valorDe">Valor:</label>
+        <input type="number" id="valorDe" placeholder="Digite o valor">
+
+      <br><br>
+
+      <label for="moeda">Converter para:</label>
+      <select name="moeda" id="moedaDest" data-theme="b" data-icon="arrow-d" data-iconpos="right">
+        <option value="USD">🇺🇸 Dólar (USD)</option>
+        <option value="EUR">🇪🇺 Euro (EUR)</option>
+        <option value="BRL">🇧🇷 Real (BRL)</option>
+        <option value="JPY">🇯🇵 Iene (JPY)</option>
+        <option value="GBP">🇬🇧 Libra (GBP)</option>
+        <option value="CAD">🇨🇦 Dólar Canadense (CAD)</option>
+        <option value="AUD">🇦🇺 Dólar Australiano (AUD)</option>
+        <option value="CHF">🇨🇭 Franco Suíço (CHF)</option>
+        <option value="CNY">🇨🇳 Yuan Chinês (CNY)</option>
+        <option value="VES">🇻🇪 Bolívar Venezuelano (VES)</option>
+        <option value="AOA">🇦🇴 Kwanza Angolano (AOA)</option>
+        
+      </select>
+      
+      <label for="valorPara">Valor convertido:</label>
+      <input type="number" id="valorPara" placeholder="Resultado">
+
+    
+      <br><br>
+    </div>
+
+    <div data-role="footer" class="custom-footer">
+      <h4>WEB e MULTIMÉDIA II</h4>
+      <p>Desenvolvido por Sebastian Diaz & Welington Picancio</p>
+    </div>
+  </div>
+</body>
+</html>
